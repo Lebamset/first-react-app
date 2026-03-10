@@ -1,15 +1,13 @@
-import "./App.css";
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+
 function App() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Hello, I'm Joy 👋</h1>
-      <h2>Future Web Developer</h2>
-
-      <p>I am learning React and building my portfolio.</p>
-
-      <button>View My Projects</button>
+    <div>
+      <Navbar />
+      <Hero />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
