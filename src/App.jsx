@@ -1,9 +1,13 @@
+import "./App.css";
 function App() {
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Hello, I'm Joy 👋</h1>
-      <p>I just built my first React app!</p>
-      <p>This is the beginning of my web developer portfolio 🚀</p>
+      <h2>Future Web Developer</h2>
+
+      <p>I am learning React and building my portfolio.</p>
+
+      <button>View My Projects</button>
     </div>
   );
 }
