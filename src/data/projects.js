@@ -1,3 +1,4 @@
+// src/data/projects.js
 export const projects = [
   {
     id: 1,
@@ -7,7 +8,7 @@ export const projects = [
     technologies: ["C#", "SQL", "Windows Forms"],
     githubUrl: "https://github.com/joyf/home-management-system",
     liveUrl: "#",
-    image: "https://via.placeholder.com/300x200",
+    image: "https://via.placeholder.com/300x200", // Make sure image exists
   },
   {
     id: 2,

@@ -1,22 +1,23 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import { projects } from "../data/projects";
+import { projects } from "../data/projects"; // Check this import path
 
 function Projects() {
+  // Add a console.log to debug
+  console.log("Projects data:", projects);
+
   return (
     <div className="projects-page">
       <h2>My Projects</h2>
-      <p className="section-intro">
-        Here are some of the projects I've built during my software engineering
-        journey. Each project represents different skills and technologies I've
-        learned.
-      </p>
-
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      {projects && projects.length > 0 ? (
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      ) : (
+        <p>No projects to display</p>
+      )}
     </div>
   );
 }
